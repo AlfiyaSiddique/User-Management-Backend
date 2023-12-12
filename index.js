@@ -11,7 +11,7 @@ app.use(json())
 
 // Implement Cors to allow requests only from frontend
   const corsOptions = {
-    origin: "https://bucolic-douhua-f509d2.netlify.app/"
+    origin: "https://bucolic-douhua-f509d2.netlify.app"
     // origin: "http://localhost:3000" for local environment
   };
 app.use(cors(corsOptions))
