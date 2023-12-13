@@ -46,7 +46,7 @@ const getUsers = (req, res) => {
       "Authorization" :`Bearer ${req.body.token}`
     }
   })
-    .then((res) => res.text())
+    .then((res) => res.json())
     .then((data) => {
       res.status(200).json(data);
     })
