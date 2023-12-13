@@ -23,7 +23,10 @@ app.get("/", (req,res)=>{
 })
 
 app.post("/login", controllers.login)
-// app.get("/users", controllers.login)
+app.post("/createuser", controllers.createUser)
+app.post("/getusers", controllers.getUsers)
+app.post("/deleteuser", controllers.deleteUser)
+app.post("/updateuser", controllers.updateUser)
 
 app.listen(5000, (err)=>{
     if(!err){
